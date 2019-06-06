@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+	.round {
+    border-radius: 100px; /* Радиус скругления */
+    border: 3px solid black; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+   }
+            .block{
+            width: 300px;
+            height: 0;
+            overflow: hidden;
+            opacity: 1;
+            transition: 2s;
+        }
+        	.active{
+           		 opacity: 1;
+           		 height: 150px;
+       		 }
+</style>
+
+<div style="background-image: url(11.jpg); background-size: 100% 100%;height: 1000px" >
+<h1 style="color: white;font-style:oblique">ОЧКИ</h1>
+<h1 class="point" style="color: white;font-style:oblique">100</h1>
+
+<h1 class="vopros1" style="margin-left: 500px; position: absolute; display: none;">найдите мне Кристианa Бэйлa, ты его не видишь ,а я вижу))</h1>
+
+	<div class="actor2 round block actives" style="background-image: url(actor2.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%; margin-left: 70px; margin-top: 230px"></div>
+	<div class="actor3 round block actives" style="background-image: url(actor3.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%; margin-left: 400px; margin-top: 50px  "></div>
+	<div class="actor4 round block actives" style="background-image: url(actor4.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%; margin-left: 700px; margin-top: 500px  "></div>
+	<div class="actor1 col-4  round block actives" style="background-image: url(actor1.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%; margin-left: 200px; margin-top: 440px ">
+	</div>
+	<div class="col-4 actor5 round block actives" style="background-image: url(actor5.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%;  margin-left: 500px; margin-top: 300px"></div>
+	<div class="col-4 actor6 round block actives" style="background-image: url(actor6.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%;  margin-left: 800px; "></div>
+	<div class="col-4 actor7 round block actives" style="background-image: url(actor7.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%;  margin-left: 30px;  ">
+	</div>
+	<div class="col-4 actor8 round block actives" style="background-image: url(actor8.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%;  margin-left: 900px; margin-top: 300px "></div>
+	<div class="col-4 actor9 round block actives" style="background-image: url(actor9.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%; margin-left: 1100px; margin-top: 100px"></div>
+</div>
+
+
+<script type="text/javascript">
+	 let point=150
+	 document.querySelector(".actor2").onclick =  function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".actor2").style.backgroundImage="url(actor2.jpg)"
+		   document.querySelector(".actor2").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".actor3").onclick =  function(){
+		point=point-10
+		  document.querySelector(".actor3").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".actor3").style.backgroundImage="url(actor3.jpg)"
+		   document.querySelector(".actor3").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".actor9").onclick =   function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".actor9").style.backgroundImage="url(actor9.jpg)"
+		   document.querySelector(".actor9").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".actor1").onclick =   function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".actor1").style.backgroundImage="url(actor1.jpg)"
+		   document.querySelector(".actor1").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".actor5").onclick =   function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".actor5").style.backgroundImage="url(actor5.jpg)"
+		   document.querySelector(".actor5").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".actor6").onclick =   function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".actor6").style.backgroundImage="url(actor6.jpg)"
+		   document.querySelector(".actor6").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".actor7").onclick =   function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".actor7").style.backgroundImage="url(actor7.jpg)"
+		   document.querySelector(".actor7").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".actor8").onclick =   function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".actor8").style.backgroundImage="url(actor8.jpg)"
+		   document.querySelector(".actor8").style.backgroundSize="100% 100%"
+ };
+
+		   
+document.querySelector(".actor4").onclick = function(){
+		point=point+50
+		  document.querySelector(".point").innerHTML = point;
+		  alert("поздравляю!!!")
+		   document.querySelector(".actor4").style.backgroundImage="url(actor4.jpg)"
+		   document.querySelector(".actor4").style.backgroundSize="100% 100%";
+ 			document.querySelector(".actor2").style.backgroundImage="url(actor2.jpg)"
+		   document.querySelector(".actor2").style.backgroundSize="100% 100%";
+		   document.querySelector(".actor3").style.backgroundImage="url(actor3.jpg)"
+		   document.querySelector(".actor3").style.backgroundSize="100% 100%";
+		   document.querySelector(".actor9").style.backgroundImage="url(actor9.jpg)"
+		   document.querySelector(".actor9").style.backgroundSize="100% 100%";
+		   	document.querySelector(".actor1").style.backgroundImage="url(actor1.jpg)"
+		   document.querySelector(".actor1").style.backgroundSize="100% 100%";
+		   document.querySelector(".actor5").style.backgroundImage="url(actor5.jpg)"
+		   document.querySelector(".actor5").style.backgroundSize="100% 100%";
+		    document.querySelector(".actor6").style.backgroundImage="url(actor6.jpg)"
+		   document.querySelector(".actor6").style.backgroundSize="100% 100%";
+		     document.querySelector(".actor7").style.backgroundImage="url(actor7.jpg)"
+		   document.querySelector(".actor7").style.backgroundSize="100% 100%";
+		    document.querySelector(".actor8").style.backgroundImage="url(actor8.jpg)"
+		   document.querySelector(".actor8").style.backgroundSize="100% 100%"
+ };
+
+let animals1 = function() {
+	document.querySelector(".actor1").style.background = "black";
+	document.querySelector(".actor2").style.background = "black";
+	document.querySelector(".actor3").style.background = "black";
+	document.querySelector(".actor4").style.background = "black";
+	document.querySelector(".actor5").style.background = "black";
+	document.querySelector(".actor6").style.background = "black";
+	document.querySelector(".actor7").style.background = "black";
+	document.querySelector(".actor8").style.background = "black";
+	document.querySelector(".actor9").style.background = "black";
+
+}
+let vopros1=function(){
+	alert("Где спрятался Кристиан Бэйл?")
+}
+
+setTimeout(animals1, 2000);
+setTimeout(vopros1,3000);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<style type="text/css">
+	.round {
+    border-radius: 100px; /* Радиус скругления */
+    border: 3px solid yellow; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+   }
+         .block{
+            width: 300px;
+            height: 0;
+            overflow: hidden;
+            opacity: 1;
+            transition: 2s;
+        }
+        	.active{
+           		 opacity: 1;
+           		 height: 150px;
+       		 }
+
+</style>
+
+<div style="background-image: url(1.jpg); background-size: 100% 100%;height: 1000px" >
+<h1 style="font-style:oblique">ОЧКИ</h1>
+<h1 class="point" style="font-style:oblique">100</h1>
+
+<h1 class="vopros" style="margin-left: 500px; position: absolute; display: none;">найдите мне зебру, ты его не видишь ,а я вижу))</h1>
+
+	<div class="card1 round block actives" style="background-image: url(3.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%; margin-left: 70px; margin-top: 230px"></div>
+	<div class="card2 round block actives" style="background-image: url(begemot.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%; margin-left: 400px; margin-top: 50px  "></div>
+	<div class="card3 round block actives" style="background-image: url(5.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%; margin-left: 800px; margin-top: 500px  "></div>
+	<div class="col-4 card4 round block actives" style="background-image: url(4.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%; margin-left: 200px; margin-top: 440px ">
+	</div>
+	<div class="col-4 card5 round block actives" style="background-image: url(jiraf.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%;  margin-left: 500px; margin-top: 300px"></div>
+	<div class="col-4 card6 round block actives" style="background-image: url(korova.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%;  margin-left: 800px; "></div>
+	<div class="col-4 card7 round block actives" style="background-image: url(2.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%;  margin-left: 30px; margin-top: 10px  ">
+	</div>
+	<div class="col-4 card8 round block actives" style="background-image: url(eleph.png); height: 200px; width: 300px; position: absolute; background-size: 100% 100%;  margin-left: 900px; margin-top: 300px "></div>
+	<a href="file:///C:/Users/illarionov.school/Dropbox/WEB%201/%D1%87%D1%82%D0%B3-%D0%BF%D1%82%D0%BD-%D1%81%D0%B1%D1%82%2009/%D0%90%D0%BC%D0%BC%D0%BE%D1%81%D0%BE%D0%B2%20%D0%98%D0%B3%D0%BE%D1%80%D1%8C/%D0%9C%D0%B0%D0%B9/97/3.%20%D0%9D%D0%B0%D0%B9%D0%B4%D0%B8%20%D1%81%D0%BB%D0%BE%D0%BD%D0%B0%2064%20%D1%83%D1%80%D0%BE%D0%BA/index.html"><div class="col-4 card9 round  block actives" style="background-image: url(images.jpg); height: 200px; width: 300px; position: absolute; background-size: 100% 100%; margin-left: 1100px; margin-top: 100px "></div></a>
+	
+</div>
+  
+<script type="text/javascript" >
+
+ 
+
+	let point=100;
+
+	
+    document.querySelector(".card1").onclick =  function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".card1").style.backgroundImage="url(3.jpg)"
+		   document.querySelector(".card1").style.backgroundSize="100% 100%"
+
+ };
+    document.querySelector(".card2").onclick =  function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".card2").style.backgroundImage="url(begemot.jpg)"
+		   document.querySelector(".card2").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".card3").onclick =   function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".card3").style.backgroundImage="url(5.jpg)"
+		   document.querySelector(".card3").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".card4").onclick =   function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".card4").style.backgroundImage="url(4.jpg)"
+		   document.querySelector(".card4").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".card5").onclick =   function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".card5").style.backgroundImage="url(jiraf.jpg)"
+		   document.querySelector(".card5").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".card6").onclick =   function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".card6").style.backgroundImage="url(korova.jpg)"
+		   document.querySelector(".card6").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".card7").onclick =   function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".card7").style.backgroundImage="url(2.jpg)"
+		   document.querySelector(".card7").style.backgroundSize="100% 100%"
+ };
+    document.querySelector(".card8").onclick =   function(){
+		point=point-10
+		  document.querySelector(".point").innerHTML = point;
+		  alert(" не правильно ")
+		   document.querySelector(".card8").style.backgroundImage="url(eleph.png)"
+		   document.querySelector(".card8").style.backgroundSize="100% 100%"
+ };
+
+		   
+document.querySelector(".card9").onclick = function(){
+		point=point+50
+		  document.querySelector(".point").innerHTML = point;
+		  alert("поздравляю , ты нашел его !!")
+		   document.querySelector(".card9").style.backgroundImage="url(images.jpg)"
+ document.querySelector(".card1").style.backgroundImage="url(3.jpg)"
+		   document.querySelector(".card1").style.backgroundSize="100% 100%";
+		   document.querySelector(".card2").style.backgroundImage="url(begemot.jpg)"
+		   document.querySelector(".card2").style.backgroundSize="100% 100%";
+		   document.querySelector(".card3").style.backgroundImage="url(eleph.png)"
+		   document.querySelector(".card3").style.backgroundSize="100% 100%";
+		   		   document.querySelector(".card4").style.backgroundImage="url(4.jpg)"
+		   document.querySelector(".card4").style.backgroundSize="100% 100%";
+		   document.querySelector(".card5").style.backgroundImage="url(jiraf.jpg)"
+		   document.querySelector(".card5").style.backgroundSize="100% 100%";
+		    document.querySelector(".card6").style.backgroundImage="url(korova.jpg)"
+		   document.querySelector(".card6").style.backgroundSize="100% 100%";
+		     document.querySelector(".card7").style.backgroundImage="url(2.jpg)"
+		   document.querySelector(".card7").style.backgroundSize="100% 100%";
+		    document.querySelector(".card8").style.backgroundImage="url(5.jpg)"
+		   document.querySelector(".card8").style.backgroundSize="100% 100%"
+ };
+
+
+let animals = function() {
+	document.querySelector(".card1").style.background = "black";
+	document.querySelector(".card2").style.background = "black";
+	document.querySelector(".card3").style.background = "black";
+	document.querySelector(".card4").style.background = "black";
+	document.querySelector(".card5").style.background = "black";
+	document.querySelector(".card6").style.background = "black";
+	document.querySelector(".card7").style.background = "black";
+	document.querySelector(".card8").style.background = "black";
+	document.querySelector(".card9").style.background = "black";
+
+}
+let vopros=function(){
+	alert("Где спрятана зебра?")
+}
+
+setTimeout(animals, 2000);
+setTimeout(vopros,3000);   
+</script>	
+</body>
+</html>
